@@ -1,10 +1,10 @@
-import React from 'react';
-import { Card } from 'react-bootstrap';
+import React from "react";
+import { Card } from "react-bootstrap";
 export default function Status({ status }) {
   let colorStatus = null;
   switch (status) {
     case "unknown":
-      colorStatus = "text-warning";
+      colorStatus = "text-primary";
       break;
     case "Alive":
       colorStatus = "text-success";
@@ -17,6 +17,8 @@ export default function Status({ status }) {
   }
 
   return (
-    <Card.Text>Status: <span className={colorStatus}>{status}</span></Card.Text>
+    <Card.Text>
+      Status: <span className={colorStatus}>{status}</span>
+    </Card.Text>
   );
 }
