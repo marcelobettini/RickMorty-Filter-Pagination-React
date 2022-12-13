@@ -31,7 +31,10 @@ function App() {
 
   return (
     <Container>
-      <h1>Brave New World</h1>
+      <header className='text-center mb-5'>
+        <h1>Rick & Morty</h1>
+        <h4>Reading data, filter and pagination</h4>
+      </header>
       <Filter setEndpoint={setEndpoint} />
       <CharactersList characters={characters} />
       <Pages prevPage={prevPage} nextPage={nextPage} pageBefore={info.prev} pageAfter={info.next} />
